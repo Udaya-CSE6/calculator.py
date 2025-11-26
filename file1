@@ -13,3 +13,13 @@ def mod(a, b):
     if b == 0:
         raise ZeroDivisionError("Cannot use modulus by zero.")
     return a % b
+
+operations = {
+    "1": ("Add", add),
+    "2": ("Subtract", sub),
+    "3": ("Multiply", mul),
+    "4": ("Divide", div),
+    "5": ("Power", power),
+    "6": ("Modulus", mod),
+    "0": ("Exit", None)
+}
